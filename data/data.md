@@ -10,3 +10,23 @@ wget $url
 tar -zxvf $file
 cd ../
 ```
+
+```sh
+# for: spatial_vignette
+# reference scRNA-seq dataset of ~14,000 adult mouse cortical cell taxonomy from the Allen Institute, generated with the SMART-Seq2 protocol
+file="allen_cortex.rds"
+url="https://www.dropbox.com/s/cuowvm4vrf65pvq/allen_cortex.rds?dl=1"
+cd data
+wget $url
+cd ../
+```
+
+```sh
+# for: spatial_vignette
+# mouse single-cell RNA-seq hippocampus dataset, produced in Saunders*, Macosko*, et al. 2018
+file="mouse_hippocampus_reference.rds"
+url="https://www.dropbox.com/s/cs6pii5my4p3ke3/mouse_hippocampus_reference.rds?dl=0"
+cd data
+wget $url
+cd ../
+```
