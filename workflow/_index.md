@@ -2,9 +2,9 @@
 
 * main.R
 * Introductory Vignettes
-  * Guided tutorial: pbmc3k_tutorial.R
-  * Multimodal analysis: multimodal_vignette.R
-  * Analysis of spatial datasets: spatial_vignette.R
+  * Guided tutorial:  [pbmc3k_tutorial.R](pbmc3k_tutorial.R) 
+  * Multimodal analysis: 
+  * Analysis of spatial datasets: 
 * Data Integration
 * Additional New Methods
 * Other
