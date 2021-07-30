@@ -14,7 +14,7 @@ c("output") %>% walk(function(x){if(!dir.exists(x)) {dir.create(x)}})
 # human pancreatic islet cell datasets produced across four technologies, CelSeq (GSE81076) CelSeq2 (GSE85241), Fluidigm C1 (GSE86469), and SMART-Seq2 (E-MTAB-5061)
 panc8 <- readRDS("data/panc8.rds")
 
-## Dataset preprocessing ----
+## Dataset pre-processing ----
 
 # split the combined object into a list, with each dataset as an element
 pancreas.list <- SplitObject(panc8, split.by = "tech")
