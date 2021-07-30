@@ -109,25 +109,12 @@ saveRDS(pbmc, file = "output/pbmc_tutorial.rds")
 
 ## Finding differentially expressed features (cluster biomarkers) ----
 
-# find all markers of cluster 1
-cluster1.markers <- FindMarkers(pbmc, ident.1 = 1, min.pct = 0.25)
-head(cluster1.markers, n = 5)
-
-# find all markers distinguishing cluster 5 from clusters 0 and 3
-cluster5.markers <- FindMarkers(pbmc, ident.1 = 5, ident.2 = c(0, 3), min.pct = 0.25)
-head(cluster5.markers, n = 5)
-
 # find markers for every cluster compared to all remaining cells, report only the positive ones  # FindAllMarkers 函数计算从 0 开始每个 cluster 与其他 cluster 相比差异 marker 基因，only.pos 设置为 TURE 表示只输出差异上调的基因，logfc.threshold 参数控制差异倍数
 pbmc.markers <- FindAllMarkers(pbmc, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
 # select top 2 markers of every cluster by avg_log2FC  # 按照差异倍数筛选输出每个 cluster 前 2 个 marker 基因信息
 pbmc.markers %>% group_by(cluster) %>% top_n(n = 2, wt = avg_log2FC)
 
-cluster1.markers <- FindMarkers(pbmc, ident.1 = 0, logfc.threshold = 0.25, test.use = "roc", only.pos = TRUE)
-
 VlnPlot(pbmc, features = c("MS4A1", "CD79A"))
-
-# you can plot raw counts as well
-VlnPlot(pbmc, features = c("NKG7", "PF4"), slot = "counts", log = TRUE)
 
 FeaturePlot(pbmc, features = c("MS4A1", "GNLY", "CD3E", "CD14", "FCER1A", "FCGR3A", "LYZ", "PPBP", "CD8A"))
 
