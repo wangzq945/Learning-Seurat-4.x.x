@@ -1,7 +1,11 @@
-# The input data
+# The input data 
 
 1. 在 Linux Shell 用以下代码进行下载
 2. 在浏览器中输入 url 进行下载，并存储在 data 文件夹
+
+```sh
+mkdir data
+```
 
 ```sh
 # for: pbmc3k_tutorial
