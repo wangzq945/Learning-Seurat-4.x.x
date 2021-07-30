@@ -1,7 +1,7 @@
 # The input data 
 
-1. 在 Linux Shell 用以下代码进行下载
-2. 在浏览器中输入 url 进行下载，并存储在 data 文件夹
+1. 在 `Linux Shell` 中，运行以下代码，下载 `input data`，必要时解压
+2. 在浏览器中，输入以下 `url` ，下载 `input data`，并存储在 data 文件夹，必要时解压
 
 ```sh
 mkdir data
@@ -37,3 +37,15 @@ cd data
 wget $url
 cd ../
 ```
+
+```sh
+# for: cell_cycle_vignette
+# dataset of murine hematopoietic progenitors
+url="https://www.dropbox.com/s/3dby3bjsaf5arrw/cell_cycle_vignette_files.zip?dl=1"
+file="cell_cycle_vignette_files.zip"
+cd data
+wget $url
+unzip $file
+cd ../
+```
+
