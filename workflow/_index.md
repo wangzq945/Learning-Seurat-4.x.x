@@ -18,8 +18,7 @@ Priorly run:  [main.R](main.R)
   * Mixscape: 
   * SCTransform:  [sctransform_vignette.R](sctransform_vignette.R) 
 * Other
-  * Visualization: 
-  * Cell Cycle Regression: 
+  * Visualization:  [visualization_vignette.R](visualization_vignette.R) 
+  * Cell Cycle Regression:  [cell_cycle_vignette.R](cell_cycle_vignette.R) 
   * Differential Expression Testing:  [de_vignette.R](de_vignette.R) 
 * SeuratWrappers
-
