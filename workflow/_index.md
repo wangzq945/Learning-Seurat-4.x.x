@@ -16,7 +16,7 @@ Priorly run:  [main.R](main.R)
 * Additional New Methods
   * Weighted Nearest Neighbor Analysis: 
   * Mixscape: 
-  * SCTransform: 
+  * SCTransform:  [sctransform_vignette.R](sctransform_vignette.R) 
 * Other
   * Visualization: 
   * Cell Cycle Regression: 
