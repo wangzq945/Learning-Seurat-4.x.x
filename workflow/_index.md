@@ -7,7 +7,7 @@ Priorly run:  [main.R](main.R)
   * Multimodal analysis: 
   * Analysis of spatial datasets:  [spatial_vignette_10x_Visium.R](spatial_vignette_10x_Visium.R) 
 * Data Integration
-  * Introduction to scRNA-seq integration: 
+  * Introduction to scRNA-seq integration:  [integration_introduction.R](integration_introduction.R) 
   * Mapping and annotating query datasets:  [integration_mapping.R](integration_mapping.R) 
   * Fast integration using reciprocal PCA (RPCA): 
   * Tips for integrating large datasets: 
