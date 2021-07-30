@@ -104,6 +104,8 @@ pbmc <- RunUMAP(pbmc, dims = 1:10)
 # individual clusters
 DimPlot(pbmc, reduction = "umap")
 
+## Save ----
+
 saveRDS(pbmc, file = "output/pbmc_tutorial.rds")
 
 ## Finding differentially expressed features (cluster biomarkers) ----
@@ -139,5 +141,7 @@ new.cluster.ids <- c("Naive CD4 T", "Memory CD4 T", "CD14+ Mono", "B", "CD8 T", 
 names(new.cluster.ids) <- levels(pbmc)
 pbmc <- RenameIdents(pbmc, new.cluster.ids)
 DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
+
+## Save ----
 
 saveRDS(pbmc, file = "output/pbmc3k_final.rds")
