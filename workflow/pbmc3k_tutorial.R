@@ -1,7 +1,6 @@
 # Seurat - Guided Clustering Tutorial ----
 
 # package
-library(dplyr)
 library(Seurat)
 library(patchwork)
 
